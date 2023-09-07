@@ -20,7 +20,8 @@ def button_event():
     print("button pressed")
 
 def call_extract():
-    app.iconify()  # Hide the main app window
+    # Hide the main window
+    app.withdraw()
     extract.extract_win(app)  # Pass the app instance to the extract window
 
 # Create four buttons
