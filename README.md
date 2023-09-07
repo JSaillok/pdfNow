@@ -9,9 +9,11 @@ Table of Contents
 An application written in pyrhon, for extracting elements from pdfs or editing them.
 
 ### Installation
-For this app, the essential libraries are *pypdf*, *pdfplumber*, *pymupdf*:
+For this app, the essential libraries are:
 ```bash
 pip install pypdf
 pip install pdfplumber
 pip install --upgrade pymupdf
+pip install tkinter
+pip install customtkinter 
 ```

@@ -1,5 +1,6 @@
 import tkinter
 import customtkinter
+from extract import extract_win
 
 customtkinter.set_appearance_mode("Dark")
 customtkinter.set_default_color_theme("gui/theme.json")
@@ -21,7 +22,7 @@ def button_event():
 # Create four buttons
 button1 = customtkinter.CTkButton(master=button_frame,
                                   text="Extract Elements",
-                                  command=button_event,
+                                  command=extract_win,
                                   width=120,
                                   height=80,
                                   border_width=0,
@@ -49,5 +50,5 @@ button1.grid(row=0, column=0, padx=40, pady=20)
 button2.grid(row=1, column=0, padx=40, pady=20)
 button3.grid(row=2, column=0, padx=40, pady=20)
 
-
-app.mainloop()
+if __name__ == "__main__":
+    app.mainloop()
