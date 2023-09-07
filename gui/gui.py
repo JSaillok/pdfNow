@@ -1,6 +1,6 @@
 import tkinter
 import customtkinter
-from extract import extract_win
+import extract
 
 customtkinter.set_appearance_mode("Dark")
 customtkinter.set_default_color_theme("gui/theme.json")
@@ -19,10 +19,14 @@ button_frame.pack(pady=20)
 def button_event():
     print("button pressed")
 
+def call_extract():
+    app.iconify()  # Hide the main app window
+    extract.extract_win(app)  # Pass the app instance to the extract window
+
 # Create four buttons
 button1 = customtkinter.CTkButton(master=button_frame,
                                   text="Extract Elements",
-                                  command=extract_win,
+                                  command=call_extract,
                                   width=120,
                                   height=80,
                                   border_width=0,
@@ -50,5 +54,4 @@ button1.grid(row=0, column=0, padx=40, pady=20)
 button2.grid(row=1, column=0, padx=40, pady=20)
 button3.grid(row=2, column=0, padx=40, pady=20)
 
-if __name__ == "__main__":
-    app.mainloop()
+app.mainloop()
