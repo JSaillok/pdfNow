@@ -26,3 +26,12 @@ def images_win(extract_window):
                                     corner_radius=8,
                                     font= ("default",20))  
     open_button.pack(expand=True)
+
+    def close_img_window():
+        # Close the extract window and show the main window again
+        images_window.destroy()
+        extract_window.deiconify()  # Show the main app window again
+
+    # Add a button to close the extract window
+    back_button = customtkinter.CTkButton(images_window, text="Back", command=close_img_window)
+    back_button.pack()
