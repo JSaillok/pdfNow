@@ -1,6 +1,5 @@
 from tkinter import filedialog as fd
-from tkinter.messagebox import showinfo
-
+from tkinter.messagebox import showinfo, showerror
 
 def select_file():
     filetypes = (
@@ -13,7 +12,13 @@ def select_file():
         initialdir='/',
         filetypes=filetypes)
 
-    showinfo(
-        title='Selected File',
-        message=filename
-    )
+    if filename:
+        showinfo(
+            title='Selected File',
+            message=filename
+        )
+    else:
+        showerror(
+            title='Error',
+            message='No file selected'
+        )

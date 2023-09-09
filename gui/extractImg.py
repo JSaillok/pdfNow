@@ -1,5 +1,9 @@
+import sys
+import os
+path = os.path.abspath("backend")
+sys.path.append(path)
 import customtkinter
-from backend.files import select_file
+from files import select_file
 
 def images_win(extract_window):
     images_window = customtkinter.CTk()
