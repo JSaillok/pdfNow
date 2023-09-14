@@ -15,5 +15,6 @@ pip install pypdf
 pip install pdfplumber
 pip install --upgrade pymupdf
 pip install tkinter
-pip install customtkinter 
+pip install customtkinter
+pip install PyMuPDF
 ```
