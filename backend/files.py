@@ -1,5 +1,7 @@
 from tkinter import filedialog as fd
 from tkinter.messagebox import showinfo, showerror
+import os
+import extractImage as ex
 
 def select_file():
     filetypes = (
@@ -13,9 +15,10 @@ def select_file():
         filetypes=filetypes)
 
     if filename:
+        ex.prosses_pdf(filename, ex.output_directory)
         showinfo(
             title='Selected File',
-            message=filename
+            message="The images extracted Successfully"
         )
     else:
         showerror(
