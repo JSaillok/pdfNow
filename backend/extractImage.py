@@ -4,8 +4,7 @@ import fitz
 images_folder = os.path.expanduser("~/Images")  # Path to the "Images" folder on your computer
 output_directory = os.path.join(images_folder, "pdfNow")  # Create "pdfNow" directory in "Images" folder
 
-
-def prosses_pdf(filename, output_directory):
+def process_pdf(filename, output_directory):
   if not os.path.exists(output_directory):
     os.makedirs(output_directory)
 

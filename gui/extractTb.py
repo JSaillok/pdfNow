@@ -3,7 +3,7 @@ import os
 path = os.path.abspath("backend")
 sys.path.append(path)
 import customtkinter
-from files import select_file
+from files import select_file2
 
 def tables_win(extract_window):
     tables_window = customtkinter.CTk()
@@ -19,7 +19,7 @@ def tables_win(extract_window):
     # open button
     open_button = customtkinter.CTkButton(master=button_frame,
                                     text='Open a File',
-                                    command=select_file,
+                                    command=select_file2,
                                     width=120,
                                     height=80,
                                     border_width=0,

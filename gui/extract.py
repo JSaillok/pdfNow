@@ -1,4 +1,3 @@
-import tkinter
 import customtkinter
 import extractImg
 import extractTb
