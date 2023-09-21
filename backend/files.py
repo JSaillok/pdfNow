@@ -39,7 +39,7 @@ def select_file2():
         filetypes=filetypes)
 
     if filename:
-        # Extract Images
+        # Extract Tables
         et.tables_pdf(filename, et.output_directory)
         showinfo(
             title='Selected File',

@@ -7,7 +7,7 @@ customtkinter.set_default_color_theme("gui/theme.json")
 app = customtkinter.CTk()
 app.geometry("720x480")
 app.title("pdfNow")
-
+    
 title = customtkinter.CTkLabel(app, text="WELCOME STRANGER", font=("default", 25))
 title.pack(padx=15, pady=15)
 
