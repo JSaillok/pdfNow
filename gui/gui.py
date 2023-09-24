@@ -1,5 +1,6 @@
 import customtkinter
 import extract
+import merge
 
 customtkinter.set_appearance_mode("Dark")
 customtkinter.set_default_color_theme("gui/theme.json")
@@ -23,6 +24,10 @@ def call_extract():
     app.withdraw()
     extract.extract_win(app)  # Pass the app instance to the extract window
 
+def call_merge():
+    app.withdraw()
+    merge.merge_win(app)
+
 # Create four buttons
 button1 = customtkinter.CTkButton(master=button_frame,
                                   text="Extract Elements",
@@ -34,7 +39,7 @@ button1 = customtkinter.CTkButton(master=button_frame,
                                   font= ("default",20))
 button2 = customtkinter.CTkButton(master=button_frame,
                                   text="Merge",
-                                  command=button_event,
+                                  command=call_merge,
                                   width=120,
                                   height=80,
                                   border_width=0,

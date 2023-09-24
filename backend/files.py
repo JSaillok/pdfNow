@@ -19,7 +19,7 @@ def select_file1():
         ei.process_pdf(filename, ei.output_directory)
         showinfo(
             title='Selected File',
-            message="The images extracted Successfully"
+            message="The images extracted Successfully/nCheck folder pdfNow/Images"
         )
     else:
         showerror(
@@ -43,7 +43,7 @@ def select_file2():
         et.tables_pdf(filename, et.output_directory)
         showinfo(
             title='Selected File',
-            message="The tables extracted Successfully"
+            message="The tables extracted Successfully/nCheck folder pdfNow/Tables"
         )
     else:
         showerror(

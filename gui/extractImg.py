@@ -27,8 +27,6 @@ def images_win(extract_window):
                                     font= ("default",20))  
     open_button.pack(expand=True)
 
-    
-
     def close_img_window():
         # Close the extract window and show the main window again
         images_window.destroy()
